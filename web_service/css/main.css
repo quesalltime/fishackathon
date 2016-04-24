@@ -1,0 +1,162 @@
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, 
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, th, td { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0; 
+    font-size: 100%; 
+    vertical-align: baseline; 
+    background: transparent; 
+} 
+
+ol, ul { 
+    list-style: none; 
+} 
+blockquote, q { 
+    quotes: none; 
+} 
+blockquote:before, blockquote:after, 
+q:before, q:after { 
+    content: ''; 
+    content: none; 
+} 
+
+/* remember to define focus styles! */ 
+:focus { 
+    outline: 0; 
+} 
+
+/* remember to highlight inserts somehow! */ 
+ins { 
+    text-decoration: none; 
+} 
+del { 
+    text-decoration: line-through; 
+} 
+
+/* tables still need 'cellspacing="0"' in the markup */ 
+table { 
+  /*  border-collapse: collapse; */
+    border-spacing: 0; 
+}
+a{text-decoration:none;color:inherit;}
+*{font-family:'Open Sans Condensed', sans-serif;}
+
+
+#main_container
+{
+  position:relative;
+}
+#cord-t
+{
+  position:absolute;
+  right:0px;
+  top:0px;
+  font-size:30px;
+}
+#map{
+  position:absolute;
+  top:0px;
+  right:0px;
+  width:60%;height:500px;
+}
+#ctrl_window{
+  position:absolute;
+  width:40%;
+  height:500px;
+}
+#chart-frame
+{
+  position: absolute;
+  top: 510px;
+  width: 100%;
+  
+}
+#chart-ctrl
+{
+  
+}
+#chart-ctrl .bt
+{
+  display:block;
+  width:100px;
+  height:40px;
+  line-height:40px;
+  text-align:center;
+  float:left;
+  margin-right:2px;
+  background-color:#12bef3;
+  color:white;
+  cursor:pointer;
+}
+#chart-ctrl .bt.active
+{
+  background-color:#fbab32;
+}
+#chart-ctrl .runingbt
+{ 
+  display:block;
+  width:100px;
+  height:40px;
+  line-height:40px;
+  text-align:center;
+  float:left;
+  margin-right:2px;
+  background-color:#eee;
+  color:white;
+  cursor:pointer;
+}
+#chart-ctrl .runingbt.active
+{
+  background-color:red;
+}
+#ctrl_window{background:#3e82f7;width:39.5%;}
+#sensor_detail
+{
+  padding: 10px;
+}
+#sensor_detail td.title
+{
+  font-weight:normal;
+  font-size:26px;
+  text-align:right;
+  color:white;
+}
+#sensor_detail td.value
+{
+  font-size:26px;
+  padding-left:10px;
+  color:white;
+}
+#ctrl_window .level
+{
+  background-color: transparent;
+  color:white;
+  font-size:35px;
+  width:100%;
+  height:50px;
+  line-height:50px;
+  text-align:center;
+  position:relative
+}
+#ctrl_window .level#_0{background-color:#b2b2b2;}
+#ctrl_window .level#_1{background-color:#148d07;}
+#ctrl_window .level#_2{background-color:#ffc000;}
+#ctrl_window .level#_3{background-color:#ff0000;}
+#ctrl_window .level#_0:after{content:"Minimally Suitable"}
+#ctrl_window .level#_1:after{content:"Suitable"}
+#ctrl_window .level#_2:after{content:"Very Suitable"}
+#ctrl_window .level#_3:after{content:"Highly Suitable"}
+
+
+#ctrl_window[level="0"]{background-color:#b2b2b2;}
+#ctrl_window[level="1"]{background-color:#148d07;}
+#ctrl_window[level="2"]{background-color:#ffc000;}
+#ctrl_window[level="3"]{background-color:#ff0000;}
